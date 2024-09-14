@@ -51,22 +51,22 @@ const cityHide=Document.querySelector('.not-found');
                                 },2500);
                         switch (json.weather[0].main) {
                             case 'clear':
-                                image.src = 'images/clear.png';
+                                image.src = 'clear.png';
                                 break;
                             case 'rain':
-                                image.src = 'images/rain.png';
+                                image.src = 'rain.png';
                                 break;
                             case 'snow':
-                                image.src = 'images/snow.png';
+                                image.src = 'snow.png';
                                 break;
                             case 'clouds':
-                                image.src = 'images/cloud.png';
+                                image.src = 'cloud.png';
                                 break;
                             case 'mist':
-                                image.src = 'images/mist.png';
+                                image.src = 'mist.png';
                                 break;
                             default:
-                                image.src = 'images/cloud.png';
+                                image.src = 'cloud.png';
                         }
 
                         temperature.innerHTML = `${Math.round(data.main.temp)}<span>°C</span>`;
